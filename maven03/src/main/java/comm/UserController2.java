@@ -24,8 +24,8 @@ public class UserController2 {
 	@Resource  // 注入SqlSessionTemplate对象  
     private SqlSessionTemplate sqlSessionTemplate; 
     //显示用户
-    @RequestMapping("/list2")
-    public List index() throws Exception {
+    @RequestMapping("/list3")
+    public List index() {
     	List list=sqlSessionTemplate.selectList("comm.mapper.UserMapper.getUser");
     	
         return list;
